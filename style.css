@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Muli&display=swap';
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background-color: #3b3b98;
+  color: #fff;
+  font-family: "Muli", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +14,69 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background-color: #23235b;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+.container h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+.container .result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+.container .result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  justify-self: center;
+}
+.container .result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.container .btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transform: scale(1);
+}
+.container .btn:active {
+  transform: scale(0.98);
+}
+.container .btn-large {
+  display: block;
+  width: 100%;
+}
+.container #length {
+  max-width: 40px;
+}
+.container .setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
